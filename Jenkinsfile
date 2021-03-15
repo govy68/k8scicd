@@ -7,7 +7,6 @@ pipeline {
     stages {
         stage('Build') {
             agent { docker 'golang' }
-            }
             steps {
                 // Create our project directory.
                 sh 'cd ${GOPATH}/src'
@@ -20,7 +19,6 @@ pipeline {
         }
         stage('Test') {
             agent { docker 'golang' }
-            }
             steps {                 
                 // Create our project directory.
                 sh 'cd ${GOPATH}/src'

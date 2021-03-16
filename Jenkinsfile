@@ -5,7 +5,7 @@ pipeline {
         GOCACHE = "/tmp"
     }
     stages {
-        stage('Test') {
+        stage('Test111') {
             steps {
 		echo "TESTing~~~~~~~~~~~~~~~~~~~"
             }

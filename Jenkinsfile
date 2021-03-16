@@ -13,7 +13,7 @@ pipeline {
 
         stage('Build') {
             agent { 
-		Dockerfile true
+		dockerfile true
 //                docker { 
 //                    image 'golang' 
 //                }

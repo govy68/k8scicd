@@ -5,6 +5,12 @@ pipeline {
         GOCACHE = "/tmp"
     }
     stages {
+        stage('Test') {
+            steps {
+		echo "TESTing~~~~~~~~~~~~~~~~~~~"
+            }
+	}
+
         stage('Build') {
             agent { docker 'golang' }
             steps {

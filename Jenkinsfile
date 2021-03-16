@@ -13,9 +13,10 @@ pipeline {
 
         stage('Build') {
             agent { 
-                docker { 
-                    image 'golang' 
-                }
+		dockerfile tru
+//                docker { 
+//                    image 'golang' 
+//                }
             }
             steps {
                 // Create our project directory.
